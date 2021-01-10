@@ -63,7 +63,7 @@
                         <p class="typing-demo">Owner at WebArt</p>
                         <div class="scroll-down next-section animate">
                             <a href="#about">
-                                <img src="images/scroll-down.svg" alt="">
+                                <img src="images/svg/scroll-down.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -71,22 +71,50 @@
             </div>
         </section>
 
+        <script type="text/javascript" src="js/nodes.js"></script>
+        <script type="text/javascript">
+            var nodesjs = new NodesJs({
+                id: 'nodes',
+                width: window.innerWidth,
+                height: window.innerHeight,
+                particleSize: 3,
+                lineSize: 1,
+                particleColor: [255, 255, 255, 0.1],
+                lineColor: [255, 255, 255],
+                backgroundFrom: [37, 40, 41],
+                backgroundTo: [37, 40, 41],
+                backgroundDuration: 6000,
+                nobg: false,
+                number: window.hasOwnProperty('orientation') ? 30 : 100,
+                speed: 30,
+                pointerCircleRadius: 150
+            });
+        </script>
+        <canvas id="nodes"></canvas>
+
         <section class="animated-row" id="about">
             <div class="section-inner">
                 <div class="about-section">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8 wide-col-laptop">
-                            <div class="row">
-                                <div class="col-md-6">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="row green-text-bg">
+                                <div class="col-md-8">
                                     <div class="about-contentbox">
                                         <div class="animate" data-animate="fadeInUp">
-                                            <span>About Me</span>
-                                            <h2>Who am i?</h2>
-                                            <p>Credits go to <strong>Unsplash</strong> and <strong>Pexels</strong>
-                                                for photos and video used in this template. Vivamus tincidunt, augue
-                                                rutrum convallis volutpat, massa lacus tempus leo.</p>
+                                            <!-- <span>About Me</span> -->
+                                            <h2>About Me</h2>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu massa
+                                                consectetur,
+                                                eleifend lacus ut, malesuada mauris. <strong>Aenean varius</strong>
+                                                risus lacinia tincidunt eleifend.
+                                                Maecenas in ultrices felis, sed condimentum felis. Vestibulum at aliquam
+                                                augue. Orci
+                                                varius natoque penatibus et magnis dis parturient montes, nascetur
+                                                ridiculus mus.
+                                            </p>
                                         </div>
-                                        <div class="facts-list owl-carousel">
+                                        <!-- <div class="facts-list owl-carousel">
                                             <div class="item animate" data-animate="fadeInUp">
                                                 <div class="counter-box">
                                                     <i class="fa fa-trophy counter-icon"
@@ -122,12 +150,17 @@
                                                     Certificates
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <figure class="about-img animate" data-animate="fadeInUp"><img
-                                            src="images/profile-girl.jpg" class="rounded" alt=""></figure>
+                                        src="images/item-3.jpg" class="rounded" alt=""></figure>
+                                    <!-- <div class="counter-box">
+                                        <i class="fa fa-desktop counter-icon"
+                                            aria-hidden="true"></i><span class="count-number">12</span>
+                                        Working Years
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -136,7 +169,7 @@
             </div>
         </section>
 
-        <section class="animated-row" id="slide03">
+        <!-- <section class="animated-row" id="slide03">
             <div class="section-inner">
                 <div class="row justify-content-center">
                     <div class="col-md-8 wide-col-laptop">
@@ -223,17 +256,66 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="animated-row" id="skills">
             <div class="section-inner">
-                <div class="row justify-content-center">
-                    <div class="col-md-7 wide-col-laptop">
-                        <div class="title-block animate" data-animate="fadeInUp">
-                            <span>My Skills</span>
-                            <h2>What i’m good?</h2>
+                <div class="about-section">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 wide-col-laptop">
+                            <div class="row">
+                                <div class="contentbox">
+                                    <div class="skills-contentbox">
+                                        <div class="animate" data-animate="fadeInUp">
+                                            <img id="skills-icon" src="images/svg/coding.svg" alt="">
+                                            <h4>FRONTEND</h4>
+                                            <p> 
+                                                Malesuada mauris. <strong>Aenean varius</strong>
+                                                risus gzrum lacinia tincidunt eleifend.
+                                            </p>
+                                            <!-- <p>HTML5</p>
+                                            <p>CSS3</p>
+                                            <p>JAVASCRIPT ECMASCRIPT 5</p>
+                                            <p>ANGULAR FRAMEWORK</p>
+                                            <p>VUE FRAMEWORK</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentbox">
+                                    <div class="skills-contentbox">
+                                        <div class="animate" data-animate="fadeInUp">
+                                            <img id="skills-icon" src="images/svg/admin.svg" alt="">
+                                            <h4>BACKEND</h4>
+                                            <p> 
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu massa
+                                                consectetur,
+                                            </p>
+                                            <!-- <p>PHP</p>
+                                            <p>C++</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentbox">
+                                    <div class="skills-contentbox">
+                                        <div class="animate" data-animate="fadeInUp">
+                                            <img id="skills-icon" src="images/svg/idea.svg" alt="">
+                                            <h4>DESIGN</h4>
+                                            <p> 
+                                                Eleifend lacus ut, malesuada mauris. <strong>Aenean varius</strong>
+                                                risus lacinia tincidunt eleifend.
+                                            </p>
+                                            <!-- <p>BOOTSTRAP</p>
+                                            <p>PHOTOSHOP</p>
+                                            <p>ILLUSTRATOR</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skills-row animate" data-animate="fadeInDown">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="skills-row animate" data-animate="fadeInDown">
                             <div class="row">
                                 <div class="col-md-8 offset-md-2">
                                     <div class="skill-item">
@@ -266,10 +348,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div> -->
         </section>
 
         <section class="animated-row" id="slide06">
@@ -277,8 +356,8 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 wide-col-laptop">
                         <div class="title-block animate" data-animate="fadeInUp">
-                            <span>My Work</span>
-                            <h2>what i’ve done?</h2>
+                            <h2>MY WORK</h2>
+                            <span>Lorem ipsum dolor sit</span>
                         </div>
                         <div class="gallery-section">
                             <div class="gallery-list owl-carousel">
@@ -288,9 +367,11 @@
                                             <img src="images/item-1.jpg" alt="">
                                         </div>
                                         <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>templatemo is the best</h4>
-                                            <p>Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap CSS templates.</p>
+                                            <h4>Lorem ipsum dolor sit</h4>
+                                            <p>
+                                                Please tell your friends about it. Templatemo is the best website to
+                                                download free Bootstrap CSS templates.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -300,9 +381,11 @@
                                             <img src="images/item-2.jpg" alt="">
                                         </div>
                                         <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>templatemo is the best</h4>
-                                            <p>Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap themes.</p>
+                                            <h4>Lorem ipsum dolor sit</h4>
+                                            <p>
+                                                Please tell your friends about it. Templatemo is the best website to
+                                                download free Bootstrap CSS templates.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -312,9 +395,11 @@
                                             <img src="images/item-3.jpg" alt="">
                                         </div>
                                         <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>templatemo is the best</h4>
-                                            <p>Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap layouts.</p>
+                                            <h4>Lorem ipsum dolor sit</h4>
+                                            <p>
+                                                Please tell your friends about it. Templatemo is the best website to
+                                                download free Bootstrap CSS templates.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -324,9 +409,11 @@
                                             <img src="images/item-1.jpg" alt="">
                                         </div>
                                         <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>templatemo is the best</h4>
-                                            <p>Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap templates.</p>
+                                            <h4>Lorem ipsum dolor sit</h4>
+                                            <p>
+                                                Please tell your friends about it. Templatemo is the best website to
+                                                download free Bootstrap CSS templates.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -336,9 +423,11 @@
                                             <img src="images/item-2.jpg" alt="">
                                         </div>
                                         <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>templatemo is the best</h4>
-                                            <p>Please tell your friends about it. Templatemo is the best website to
-                                                download Bootstrap CSS templates.</p>
+                                            <h4>Lorem ipsum dolor sit</h4>
+                                            <p>
+                                                Please tell your friends about it. Templatemo is the best website to
+                                                download free Bootstrap CSS templates.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -348,33 +437,11 @@
                                             <img src="images/item-3.jpg" alt="">
                                         </div>
                                         <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>templatemo is the best</h4>
-                                            <p>Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap templates.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="portfolio-item">
-                                        <div class="thumb">
-                                            <img src="images/item-1.jpg" alt="">
-                                        </div>
-                                        <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>templatemo is the best</h4>
-                                            <p>Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap templates.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="portfolio-item">
-                                        <div class="thumb">
-                                            <img src="images/item-2.jpg" alt="">
-                                        </div>
-                                        <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>templatemo is the best</h4>
-                                            <p>Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap templates.</p>
+                                            <h4>Lorem ipsum dolor sit</h4>
+                                            <p>
+                                                Please tell your friends about it. Templatemo is the best website to
+                                                download free Bootstrap CSS templates.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -384,9 +451,11 @@
                                             <img src="images/item-3.jpg" alt="">
                                         </div>
                                         <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>templatemo is the best</h4>
-                                            <p>Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap templates.</p>
+                                            <h4>Lorem ipsum dolor sit</h4>
+                                            <p>
+                                                Please tell your friends about it. Templatemo is the best website to
+                                                download free Bootstrap CSS templates.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -397,7 +466,7 @@
             </div>
         </section>
 
-        <section class="animated-row" id="portfolio">
+        <!-- <section class="animated-row" id="portfolio">
             <div class="section-inner">
                 <div class="row justify-content-center">
                     <div class="col-md-8 wide-col-laptop">
@@ -456,49 +525,53 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="animated-row" id="contact">
-            <div class="section-inner">
-                <div class="row justify-content-center">
-                    <div class="col-md-7 wide-col-laptop">
-                        <div class="title-block animate" data-animate="fadeInUp">
-                            <span>Contact</span>
-                            <h2>Get In Touch!</h2>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-md-4 wide-col-laptop">
+                        <div class="row">
+                            <div class="col-md-10 animate" data-animate="fadeInUp">
+                                <h1>WEBART</h1>
+                                <h4>Find me on socials</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <ul class="social-icons">
+                                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#" title="Instagram"><i class="fa fa-behance"></i></a></li>
+                                    <li><a href="#" title="GitHub"><i class="fa fa-github"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-md-4 wide-col-laptop">
                         <div class="contact-section">
                             <div class="row">
-                                <div class="col-md-6 animate" data-animate="fadeInUp">
+                                <div class="col-md-10 animate" data-animate="fadeInUp">
+                                    <h4>Blah</h4>
                                     <div class="contact-box">
                                         <div class="contact-row">
-                                            <i class="fa fa-map-marker"></i> 123 New Street Here, Wonderful City
-                                            10220
+                                            <i class="fa fa-map-marker"></i> Slatinska 3, Vugrovec
                                         </div>
                                         <div class="contact-row">
-                                            <i class="fa fa-phone"></i> 090 080 0210
+                                            <i class="fa fa-phone"></i> 091 412 8338
                                         </div>
                                         <div class="contact-row">
-                                            <i class="fa fa-envelope"></i> info@company.co
+                                            <i class="fa fa-envelope"></i> mihaela.trempetic@gmail.com
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 animate" data-animate="fadeInUp">
-                                    <form id="ajax-contact" method="post" action="#">
-                                        <div class="input-field">
-                                            <input type="text" class="form-control" name="name" id="name" required
-                                                placeholder="Name">
-                                        </div>
-                                        <div class="input-field">
-                                            <input type="email" class="form-control" name="email" id="email"
-                                                required placeholder="Email">
-                                        </div>
-                                        <div class="input-field">
-                                            <textarea class="form-control" name="message" id="message" required
-                                                placeholder="Message"></textarea>
-                                        </div>
-                                        <button class="btn" type="submit">Submit</button>
-                                    </form>
-                                    <div id="form-messages" class="mt-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wide-col-laptop">
+                        <div class="contact-section">
+                            <div class="row">
+                                <h4>Contact me</h4>
+                                <div class="col-md-10 animate" data-animate="fadeInUp">
+                                    <p>Mala kontakt formica</p>
                                 </div>
                             </div>
                         </div>
@@ -507,18 +580,15 @@
             </div>
         </section>
 
-        <!-- <div id="social-icons">
-            <div class="text-right">
-                <ul class="social-icons">
-                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#" title="Instagram"><i class="fa fa-behance"></i></a></li>
-                </ul>
+        <section class="animated-row" id="footer">
+            <div class="footer-container">
+                <p class="copyright">Copyright © 2021 | Designed by <strong>Mihaela Trempetić</strong>
+                </p>
             </div>
-        </div> -->
+        </section>
     </div>
 
+    <!-- Additional JS Files -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fullpage.min.js"></script>

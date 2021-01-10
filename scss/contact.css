@@ -112,16 +112,13 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 30px;
-    background: rgba(250,250,250,0.25);
-    border-radius: 10px;
-    padding: 30px;
-    font-weight: 700;
+    border-radius: 5px;
+    padding: 20px;
   }
   .contact-row i {
-    width:55px;
-    font-size: 30px;
-    display:block;
+    width: 40px;
+    font-size: 25px;
+    display: block;
   }
   .contact-row i.fa-envelope {
     font-size: 25px;

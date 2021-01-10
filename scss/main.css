@@ -12,10 +12,10 @@ body {
 }
 
 body {
-  /* font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif; */
   font-family: 'Jura Regular';
   color: #fff;
-  text-align:center;
+  position: relative;
+  overflow-x: hidden;
   background: #252829;
 }
 
@@ -121,12 +121,51 @@ figure {
 }
 
 section {
-  height: 700px;
-  padding: 75px 0;
+  height: auto;
+  padding: 80px 0;
+  z-index: 12;
+  position: relative;
+}
+
+canvas {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 100vh;
 }
 
 #contact {
   background: #141617;
+  padding: 75px 125px 70px;
+}
+
+#footer {
+  height: auto;
+  padding: 0;
+  background-color: #141617;
+}
+
+.footer-container {
+  height: 4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-top: 1px solid #ffffff4f;
+}
+
+.footer-container p {
+  font-size: 15px;
+}
+
+.grey-text-bg {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.green-text-bg {
+  background: #3653539e;
+  border-radius: 5px;
 }
 
 .opacity-no {
@@ -139,7 +178,8 @@ section {
 }
 
 .section-inner {
-  padding:20px 30px 0;
+  margin: auto;
+  padding: 50px 0;
 }
 
 .fp-scrollable {
