@@ -1,0 +1,105 @@
+
+header {
+  padding:20px 0;
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  z-index:999;
+  transition: 500ms;
+  
+  .container-fluid {
+    width: 90%;
+    padding:0 20px;
+  }
+  
+  #logo {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #364644;
+    width: 14px;
+    justify-content: center;
+    display: flex;
+    margin-left: 33px;
+  }
+  
+  .navbar {
+    padding: 0;
+
+    .navbar-toggle {
+      display:none;
+    }
+
+    .navbar-nav {
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+
+      li {
+        margin-left: 30px;
+      
+        a {
+          color:#fff;
+          font-size: 15px;
+          text-decoration:none;
+          display:inline-block;
+          font-weight: 500;
+          opacity: 0.9;
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        &.active a {
+          opacity: 1;
+        }
+
+        &:nth-child(1):hover ~ hr {
+          margin-left: 6%;
+        }
+
+        &:nth-child(2):hover ~ hr,
+        &:nth-child(2).active ~ hr {
+          width: 15%;
+          margin-left: 22%;
+        }
+
+        &:nth-child(3):hover ~ hr,
+        &:nth-child(3).active ~ hr {
+          width: 15%;
+          margin-left: 43%;
+        }
+
+        &:nth-child(4):hover ~ hr,
+        &:nth-child(4).active ~ hr {
+          width: 14%;
+          margin-left: 63%;
+        }
+
+        &:nth-child(5):hover ~ hr,
+        &:nth-child(5).active ~ hr {
+          width: 19%;
+          margin-left: 83%;
+        }
+      }
+    }
+
+    hr {
+      height: 1px;
+      width: 10%;
+      margin: 0;
+      margin-left: 6%;
+      background: #edffff;
+      border: none;
+      transition: .3s ease-in-out;
+    }
+
+    .collapse:not(.show) {
+      display:block;
+    }
+  }
+}
+
+  

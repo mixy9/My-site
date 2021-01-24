@@ -1,4 +1,3 @@
-/* CONTACT BLOCK SCSS */
 #social-icons {
   padding: 0;
   position: fixed;
@@ -10,7 +9,7 @@
 }
 
 .social-icons {
-  margin: 2rem 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -23,7 +22,6 @@
 .social-icons li a {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
   display: inline-block;
   line-height: 50px;
   text-align: center;
@@ -33,6 +31,7 @@
 }
 
 .social-icons li a:hover {
-  background: #1f3737;
+  color: #1e1e1e;
+  background: #335656;
 }
 /*# sourceMappingURL=socials.css.map */

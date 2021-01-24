@@ -22,38 +22,59 @@
 </head>
 
 <body>
-    <div>
-        <div class="preloader">
-            <div class="preloader-eclipse">
-                <object type="image/svg+xml" class="eclipse" data="images/SVG/eclipse.svg"></object>
-            </div>
+    <div class="preloader">
+        <div class="preloader-eclipse">
+            <object type="image/svg+xml" class="eclipse" data="images/SVG/eclipse.svg"></object>
         </div>
+    </div>
 
-        <header id="header">
-            <div class="container-fluid">
-                <div class="navbar">
-                    <a href="#" id="logo" title="WEBART">
-                        webART
-                    </a>
-                    <div class="navigation-row">
-                        <nav id="navigation">
-                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
-                            <div class="nav-box navbar-collapse">
-                                <ul class="navigation-menu nav navbar-nav navbars" id="main-nav">
-                                    <li><a href="#welcomepage">Home</a></li>
-                                    <li><a href="#about">About Me</a></li>
-                                    <li><a href="#skills">My Skills</a></li>
-                                    <li><a href="#portfolio">Portfolio</a></li>
-                                    <li><a href="#contact">Contact Me</a></li>
-                                    <hr />
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="navbar">
+                <a href="#" id="logo" title="WEBART">
+                    webART
+                </a>
+                <div class="navigation-row">
+                    <nav id="navigation">
+                        <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                        <div class="nav-box navbar-collapse">
+                            <ul class="navigation-menu nav navbar-nav navbars" id="main-nav">
+                                <li><a href="#welcomepage">Home</a></li>
+                                <li><a href="#about">About Me</a></li>
+                                <li><a href="#skills">My Skills</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact Me</a></li>
+                                <hr />
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
+    <script type="text/javascript" src="js/nodes.js"></script>
+    <script type="text/javascript">
+        var nodesjs = new NodesJs({
+            id: 'nodes',
+            width: window.innerWidth,
+            height: window.innerHeight,
+            particleSize: 3,
+            lineSize: 1,
+            particleColor: [255, 255, 255, 0.1],
+            lineColor: [255, 255, 255],
+            backgroundFrom: [37, 40, 41],
+            backgroundTo: [37, 40, 41],
+            backgroundDuration: 6000,
+            nobg: false,
+            number: window.hasOwnProperty('orientation') ? 30 : 100,
+            speed: 30,
+            pointerCircleRadius: 150
+        });
+    </script>
+    <canvas id="nodes"></canvas>
+
+    <main>
         <section class="animated-row" id="welcomepage">
             <div class="overlay">
                 <div class="section-inner" id="startchange">
@@ -71,27 +92,6 @@
             </div>
         </section>
 
-        <script type="text/javascript" src="js/nodes.js"></script>
-        <script type="text/javascript">
-            var nodesjs = new NodesJs({
-                id: 'nodes',
-                width: window.innerWidth,
-                height: window.innerHeight,
-                particleSize: 3,
-                lineSize: 1,
-                particleColor: [255, 255, 255, 0.1],
-                lineColor: [255, 255, 255],
-                backgroundFrom: [37, 40, 41],
-                backgroundTo: [37, 40, 41],
-                backgroundDuration: 6000,
-                nobg: false,
-                number: window.hasOwnProperty('orientation') ? 30 : 100,
-                speed: 30,
-                pointerCircleRadius: 150
-            });
-        </script>
-        <canvas id="nodes"></canvas>
-
         <section class="animated-row" id="about">
             <div class="section-inner">
                 <div class="about-section">
@@ -100,8 +100,7 @@
                             <div class="row green-text-bg">
                                 <div class="col-md-8">
                                     <div class="about-contentbox">
-                                        <div class="animate" data-animate="fadeInUp">
-                                            <!-- <span>About Me</span> -->
+                                        <!-- <div class="animate" data-animate="fadeInUp">
                                             <h2>About Me</h2>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu massa
@@ -113,7 +112,7 @@
                                                 varius natoque penatibus et magnis dis parturient montes, nascetur
                                                 ridiculus mus.
                                             </p>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="facts-list owl-carousel">
                                             <div class="item animate" data-animate="fadeInUp">
                                                 <div class="counter-box">
@@ -154,8 +153,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <figure class="about-img animate" data-animate="fadeInUp"><img
-                                        src="images/item-3.jpg" class="rounded" alt=""></figure>
+                                    <!-- <figure class="about-img animate" data-animate="fadeInUp"><img
+                                        src="images/item-3.jpg" class="rounded" alt=""></figure> -->
                                     <!-- <div class="counter-box">
                                         <i class="fa fa-desktop counter-icon"
                                             aria-hidden="true"></i><span class="count-number">12</span>
@@ -169,357 +168,118 @@
             </div>
         </section>
 
-        <!-- <section class="animated-row" id="slide03">
+        <section class="animated-row" id="work">
             <div class="section-inner">
                 <div class="row justify-content-center">
                     <div class="col-md-8 wide-col-laptop">
-                        <div class="title-block animate" data-animate="fadeInUp">
-                            <span>Services</span>
-                            <h2>What I Do?</h2>
+                        <!-- <div class="title-block animate" data-animate="fadeInUp">
+                            <h2>MY WORK</h2>
+                            <span>Lorem ipsum dolor sit</span>
                         </div>
-                        <div class="services-section">
-                            <div class="services-list owl-carousel">
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="service-box">
-                                        <span class="service-icon"><i class="fa fa-bookmark"
-                                                aria-hidden="true"></i></span>
-                                        <h3>Bootstrap Themes</h3>
-                                        <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu
-                                            maximus enim tortor vitae quam. </p>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="service-box">
-                                        <span class="service-icon"><i class="fa fa-cloud"
-                                                aria-hidden="true"></i></span>
-                                        <h3>HTML5 Coding</h3>
-                                        <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu
-                                            maximus enim tortor vitae quam. </p>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="service-box">
-                                        <span class="service-icon"><i class="fa fa-desktop"
-                                                aria-hidden="true"></i></span>
-                                        <h3>Fully Responsive</h3>
-                                        <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu
-                                            maximus enim tortor vitae quam. </p>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="service-box">
-                                        <span class="service-icon"><i class="fa fa-mobile"
-                                                aria-hidden="true"></i></span>
-                                        <h3>Mobile Ready</h3>
-                                        <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu
-                                            maximus enim tortor vitae quam. </p>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="service-box">
-                                        <span class="service-icon"><i class="fa fa-comments"
-                                                aria-hidden="true"></i></span>
-                                        <h3>Fast Support</h3>
-                                        <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu
-                                            maximus enim tortor vitae quam. </p>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="service-box">
-                                        <span class="service-icon"><i class="fa fa-database"
-                                                aria-hidden="true"></i></span>
-                                        <h3>24-hour Up Time</h3>
-                                        <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu
-                                            maximus enim tortor vitae quam. </p>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="service-box">
-                                        <span class="service-icon"><i class="fa fa-bell"
-                                                aria-hidden="true"></i></span>
-                                        <h3>Instant Upgrades</h3>
-                                        <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu
-                                            maximus enim tortor vitae quam. </p>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="service-box">
-                                        <span class="service-icon"><i class="fa fa-camera"
-                                                aria-hidden="true"></i></span>
-                                        <h3>Always Monitoring</h3>
-                                        <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu
-                                            maximus enim tortor vitae quam. </p>
+                        <div class="row">
+                            <div class="contentbox">
+                                <div class="skills-contentbox">
+                                    <div class="animate" data-animate="fadeInUp">
+                                        <img id="skills-icon" src="images/svg/coding.svg" alt="">
+                                        <h4>FRONTEND</h4>
+                                        <p> 
+                                            Malesuada mauris. <strong>Aenean varius</strong>
+                                            risus gzrum lacinia tincidunt eleifend.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <section class="animated-row" id="skills">
-            <div class="section-inner">
-                <div class="about-section">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 wide-col-laptop">
-                            <div class="row">
-                                <div class="contentbox">
-                                    <div class="skills-contentbox">
-                                        <div class="animate" data-animate="fadeInUp">
-                                            <img id="skills-icon" src="images/svg/coding.svg" alt="">
-                                            <h4>FRONTEND</h4>
-                                            <p> 
-                                                Malesuada mauris. <strong>Aenean varius</strong>
-                                                risus gzrum lacinia tincidunt eleifend.
-                                            </p>
-                                            <!-- <p>HTML5</p>
-                                            <p>CSS3</p>
-                                            <p>JAVASCRIPT ECMASCRIPT 5</p>
-                                            <p>ANGULAR FRAMEWORK</p>
-                                            <p>VUE FRAMEWORK</p> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="contentbox">
-                                    <div class="skills-contentbox">
-                                        <div class="animate" data-animate="fadeInUp">
-                                            <img id="skills-icon" src="images/svg/admin.svg" alt="">
-                                            <h4>BACKEND</h4>
-                                            <p> 
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu massa
-                                                consectetur,
-                                            </p>
-                                            <!-- <p>PHP</p>
-                                            <p>C++</p> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="contentbox">
-                                    <div class="skills-contentbox">
-                                        <div class="animate" data-animate="fadeInUp">
-                                            <img id="skills-icon" src="images/svg/idea.svg" alt="">
-                                            <h4>DESIGN</h4>
-                                            <p> 
-                                                Eleifend lacus ut, malesuada mauris. <strong>Aenean varius</strong>
-                                                risus lacinia tincidunt eleifend.
-                                            </p>
-                                            <!-- <p>BOOTSTRAP</p>
-                                            <p>PHOTOSHOP</p>
-                                            <p>ILLUSTRATOR</p> -->
-                                        </div>
+                            <div class="contentbox">
+                                <div class="skills-contentbox">
+                                    <div class="animate" data-animate="fadeInUp">
+                                        <img id="skills-icon" src="images/svg/admin.svg" alt="">
+                                        <h4>BACKEND</h4>
+                                        <p> 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu massa
+                                            consectetur,
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="skills-row animate" data-animate="fadeInDown">
-                            <div class="row">
-                                <div class="col-md-8 offset-md-2">
-                                    <div class="skill-item">
-                                        <h6>HTML CSS</h6>
-                                        <div class="skill-bar">
-                                            <span>70%</span>
-                                            <div class="filled-bar"></div>
+                            <div class="contentbox">
+                                <div class="skills-contentbox">
+                                    <div class="animate" data-animate="fadeInUp">
+                                        <img id="skills-icon" src="images/svg/idea.svg" alt="">
+                                        <h4>DESIGN</h4>
+                                        <p> 
+                                            Eleifend lacus ut, malesuada mauris. <strong>Aenean varius</strong>
+                                            risus lacinia tincidunt eleifend.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="gallery-section">
+                            <div class="gallery-list owl-carousel">
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/css.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="skill-item">
-                                        <h6>PSD Design</h6>
-                                        <div class="skill-bar">
-                                            <span>90%</span>
-                                            <div class="filled-bar-2"></div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/html-5.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="skill-item">
-                                        <h6>Social Media</h6>
-                                        <div class="skill-bar">
-                                            <span>70%</span>
-                                            <div class="filled-bar"></div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/css.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="skill-item last-skill">
-                                        <h6>Leadership</h6>
-                                        <div class="skill-bar">
-                                            <span>90%</span>
-                                            <div class="filled-bar-2"></div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/html-5.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/css.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/html-5.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/html-5.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div> -->
-        </section>
-
-        <section class="animated-row" id="slide06">
-            <div class="section-inner">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 wide-col-laptop">
-                        <div class="title-block animate" data-animate="fadeInUp">
-                            <h2>MY WORK</h2>
-                            <span>Lorem ipsum dolor sit</span>
-                        </div>
-                        <div class="gallery-section">
-                            <div class="gallery-list owl-carousel">
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="portfolio-item">
-                                        <div class="thumb">
-                                            <img src="images/item-1.jpg" alt="">
-                                        </div>
-                                        <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>Lorem ipsum dolor sit</h4>
-                                            <p>
-                                                Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap CSS templates.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="portfolio-item">
-                                        <div class="thumb">
-                                            <img src="images/item-2.jpg" alt="">
-                                        </div>
-                                        <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>Lorem ipsum dolor sit</h4>
-                                            <p>
-                                                Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap CSS templates.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="portfolio-item">
-                                        <div class="thumb">
-                                            <img src="images/item-3.jpg" alt="">
-                                        </div>
-                                        <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>Lorem ipsum dolor sit</h4>
-                                            <p>
-                                                Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap CSS templates.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="portfolio-item">
-                                        <div class="thumb">
-                                            <img src="images/item-1.jpg" alt="">
-                                        </div>
-                                        <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>Lorem ipsum dolor sit</h4>
-                                            <p>
-                                                Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap CSS templates.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="portfolio-item">
-                                        <div class="thumb">
-                                            <img src="images/item-2.jpg" alt="">
-                                        </div>
-                                        <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>Lorem ipsum dolor sit</h4>
-                                            <p>
-                                                Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap CSS templates.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="portfolio-item">
-                                        <div class="thumb">
-                                            <img src="images/item-3.jpg" alt="">
-                                        </div>
-                                        <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>Lorem ipsum dolor sit</h4>
-                                            <p>
-                                                Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap CSS templates.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item animate" data-animate="fadeInUp">
-                                    <div class="portfolio-item">
-                                        <div class="thumb">
-                                            <img src="images/item-3.jpg" alt="">
-                                        </div>
-                                        <div class="thumb-inner animate" data-animate="fadeInUp">
-                                            <h4>Lorem ipsum dolor sit</h4>
-                                            <p>
-                                                Please tell your friends about it. Templatemo is the best website to
-                                                download free Bootstrap CSS templates.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- <section class="animated-row" id="portfolio">
+        <!-- <section class="animated-row" id="skills">
             <div class="section-inner">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 wide-col-laptop">
-                        <div class="title-block animate" data-animate="fadeInUp">
-                            <span>TESTIMONIALS</span>
-                            <h2>what THEY SAY?</h2>
-                        </div>
-                        <div class="col-md-8 offset-md-2">
-                            <div class="testimonials-section">
-                                <div class="testimonials-slider owl-carousel">
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="testimonial-item">
-                                            <div class="client-row">
-                                                <img src="images/profile-01.jpg" class="rounded-circle"
-                                                    alt="profile 1">
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <h4>Sandar</h4>
-                                                <p>"Ut varius leo eu mauris lacinia, eleifend posuere urna gravida.
-                                                    Aenean a mattis lacus."</p>
-                                                <span>Managing Director</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="testimonial-item">
-                                            <div class="client-row">
-                                                <img src="images/profile-01.jpg" class="rounded-circle"
-                                                    alt="profile 2">
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <h4>Shinn</h4>
-                                                <p>"Nam iaculis, leo nec facilisis sollicitudin, dui massa tempus
-                                                    odio, vitae malesuada ante elit vitae eros."</p>
-                                                <span>CEO and Founder</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="testimonial-item">
-                                            <div class="client-row">
-                                                <img src="images/profile-01.jpg" class="rounded-circle"
-                                                    alt="profile 3">
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <h4>Marlar</h4>
-                                                <p>"Etiam efficitur, tortor facilisis finibus semper, diam magna
-                                                    fringilla lectus, et fringilla felis urna posuere tortor."</p>
-                                                <span>Chief Marketing Officer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="about-section">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <h2>MY SKILLS</h2>
+                                <span>Lorem ipsum dolor sit</span>
                             </div>
                         </div>
                     </div>
@@ -550,10 +310,10 @@
                         <div class="contact-section">
                             <div class="row">
                                 <div class="col-md-10 animate" data-animate="fadeInUp">
-                                    <h4>Blah</h4>
+                                    <h4>Contact me </h4>
                                     <div class="contact-box">
                                         <div class="contact-row">
-                                            <i class="fa fa-map-marker"></i> Slatinska 3, Vugrovec
+                                            <i class="fa fa-map-marker"></i> BLah  3, Bla
                                         </div>
                                         <div class="contact-row">
                                             <i class="fa fa-phone"></i> 091 412 8338
@@ -569,9 +329,9 @@
                     <div class="col-md-4 wide-col-laptop">
                         <div class="contact-section">
                             <div class="row">
-                                <h4>Contact me</h4>
+                                <h4>Ask me anything</h4>
                                 <div class="col-md-10 animate" data-animate="fadeInUp">
-                                    <p>Mala kontakt formica</p>
+                                    <p>Contact form goes here...</p>
                                 </div>
                             </div>
                         </div>
@@ -586,7 +346,7 @@
                 </p>
             </div>
         </section>
-    </div>
+    </main>
 
     <!-- Additional JS Files -->
     <script src="js/jquery.js"></script>

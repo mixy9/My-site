@@ -1,0 +1,137 @@
+
+&::-webkit-input-placeholder {
+	color: #fff !important;
+	opacity: 1;
+}
+
+&::-moz-placeholder {
+	color: #fff !important;
+	opacity: 1;
+}
+
+&:-ms-input-placeholder {
+	color: #fff !important;
+	opacity: 1;
+}
+
+&:-moz-placeholder {
+	color: #fff !important;
+	opacity: 1;
+}
+
+.input-field {
+	margin-bottom: 15px;
+}
+
+.form-control {
+	height: 50px;
+	color: #fff;
+	border: none;
+	background: rgba(250,250,250,0.05);
+	border: 1px solid rgba(250,250,250,0.5);
+	border-radius: 10px;
+	padding: 4px 22px;
+	font-size: 14px;
+	margin-bottom: 30px;
+	&:focus {
+		box-shadow: none;
+		outline: none;
+		background: rgba(0,0,0,0.05);
+		border: 1px solid rgba(250,250,250,1);
+		color: #fff;
+  }
+  .form-control-dark {
+    &:focus {
+      background: rgba(0, 0, 0, 0.2);
+    }
+    background: rgba(0, 0, 0, 0.1);
+    color: #222;
+    border: none;
+    &::-webkit-input-placeholder {
+      color: #222 !important;
+      opacity: 0.7;
+    }
+    &::-moz-placeholder {
+      color: #222 !important;
+      opacity: 0.7;
+    }
+    &:-ms-input-placeholder {
+      color: #222 !important;
+      opacity: 0.7;
+    }
+    &:-moz-placeholder {
+      color: #222 !important;
+      opacity: 0.7;
+    }
+  }
+}
+
+.index {
+	.form-control.form-control-dark {
+		background: rgba(250,250,250, 0.75);
+		color: #fff;
+		&:focus {
+			background: rgba(54, 40, 158, 0.85);
+			color: #fff;
+		}
+		&::-webkit-input-placeholder {
+			color: #fff !important;
+		}
+		&::-moz-placeholder {
+			color: #fff !important;
+		}
+		&:-ms-input-placeholder {
+			color: #fff !important;
+		}
+		&:-moz-placeholder {
+			color: #fff !important;
+		}
+	}
+}
+
+textarea.form-control {
+	height: 123px;
+	padding-top: 15px;
+}
+
+.contact-section {
+	.btn {
+		width: 100%;
+	}
+}
+
+.contact-box {
+	text-align: left;
+	h4 {
+		font-size: 24px;
+		&:after {
+			content: '';
+			display: block;
+			width: 50px;
+			height: 2px;
+			background: #fff;
+			margin: 12px 0;
+		}
+	}
+}
+
+.contact-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-radius: 5px;
+	padding: 20px;
+	i {
+		width: 40px;
+		font-size: 25px;
+		display: block;
+	}
+	i.fa-envelope {
+		font-size: 25px;
+	}
+}

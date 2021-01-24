@@ -129,9 +129,13 @@ section {
 
 canvas {
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 2;
-  top: 100vh;
+}
+
+#about {
+  height: 70vh;
+  display: flex;
 }
 
 #contact {
@@ -164,7 +168,7 @@ canvas {
 }
 
 .green-text-bg {
-  background: #3653539e;
+  background: #365353d6;
   border-radius: 5px;
 }
 

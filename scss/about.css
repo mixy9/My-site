@@ -1,67 +1,75 @@
-
-/* ABOUT ME */
-
 .about-img {
   position: absolute;
   bottom: -62px;
   width: 360px;
   right: 0;
 }
+
 .about-img img {
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 40px rgba(0,0,0,.3);
-  box-shadow: 0 0 40px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }
-.about-contentbox {
+
+.about-img .about-contentbox {
   margin: 2rem 3rem 2rem 1rem;
   text-align: left;
   line-height: 1.8;
 }
-.about-contentbox span {
+
+.about-img .about-contentbox span {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 300;
 }
-.about-contentbox h2 {
+
+.about-img .about-contentbox h2 {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
 }
-.facts-list {
+
+.about-img .facts-list {
   margin-top: 30px;
 }
-.facts-list .item {
+
+.about-img .facts-list .item {
   overflow: hidden;
-  text-align:center;
+  text-align: center;
   border-radius: 10px;
   width: 100%;
   display: inline-block;
-  text-transform:capitalize;
-  font-size:14px;
+  text-transform: capitalize;
+  font-size: 14px;
   padding: 30px 0px;
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
 }
-.counter-box span {
+
+.about-img .counter-box span {
   font-size: 26px;
   font-weight: 700;
 }
-.counter-icon {
+
+.about-img .counter-icon {
   font-size: 30px;
   margin-bottom: 10px;
   opacity: 0.75;
 }
-.facts-list .item:hover {
-  background:#fff;
-  color:#1e1e1e;
+
+.about-img .facts-list .item:hover {
+  background: #fff;
+  color: #1e1e1e;
 }
-.facts-list .owl-dots {
+
+.about-img .facts-list .owl-dots {
   margin-bottom: 30px;
 }
-.count-number, .counted {
-  display:block;
-  font-size:36px;
-  font-weight:700;
-  line-height:1;
-  margin-bottom:10px;
+
+.about-img .count-number, .about-img .counted {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
 }
-  
+/*# sourceMappingURL=about.css.map */

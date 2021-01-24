@@ -68,8 +68,8 @@
 }
 
 .contentbox {
-  background-color: #ffffffc4;
-  color: #1e1e1e;
+  background-image: linear-gradient(to right, #3d5e5ec4 , #4d4d4d71);;
+  color:#fff;
   width: 30%;
   margin: 0 auto;
   border-radius: 5px;
@@ -84,5 +84,5 @@
 
 #skills-icon {
   width: 4rem;
-  margin: 0 0 2rem;
+  margin: 0 0 3rem;
 }

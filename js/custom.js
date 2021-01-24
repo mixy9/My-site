@@ -51,10 +51,12 @@
         $(window).scroll(function(){
             var scroll = $(window).scrollTop();
             if (scroll > 40) {
-              $("#header").css("background" , "rgba(52, 56, 56, 0.99)");
+              $("#header").css("background" , "#3a4949");
+              $("#logo").css("background" , "#3a4949");
             }
             else {
-              $("#header").css("background" , "transparent");  	
+              $("#header").css("background" , "transparent");
+              $("#logo").css("background" , "#364644");  	 
             }
         })
 
